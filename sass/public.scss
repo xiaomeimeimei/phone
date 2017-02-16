@@ -1,0 +1,39 @@
+@import 'px2rem.scss';
+$designWidth: 750;
+
+$f20: px2rem(20);
+$f24: px2rem(24);
+$f26: px2rem(26);
+$f28: px2rem(28);
+$f30: px2rem(30);
+$f32: px2rem(32);
+$f34: px2rem(34);
+$f36: px2rem(36);
+$f38: px2rem(38);
+$f40: px2rem(40);
+
+/*fonts icon*/
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1487057463667'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1487057463667#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1487057463667') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1487057463667') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1487057463667#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:$f20;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiasanjiao:before { content: "\e67c"; }
+.icon-sousuo-sousuo:before { content: "\e614"; }
+
+h1{font-size:$f38;}
+
+body {position: relative;width: px2rem(750);font-size: 0;margin: 0 auto;}
+.layout {width: 100%;font-size: $f24;}
+.header{width: 100%;font-size: $f38; padding: px2rem(25) px2rem(30);box-sizing: border-box;}

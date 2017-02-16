@@ -1,0 +1,21 @@
+@import 'px2rem.scss';
+@import 'public.scss';
+$designWidth: 750;
+body {
+  position: relative;
+  width: px2rem(750);
+  font-size: 0;
+  margin: 0 auto;
+  padding:0;
+}
+.layout {
+  width: 100%;
+  font-size: $f24;
+}
+.header{width: 100%;font-size: $f38; padding: px2rem(25) px2rem(30);box-sizing: border-box;}
+
+/*导航*/
+.tab{width:100%;}
+
+.tab li{width: 18%;padding: px2rem(30) 0;box-sizing: border-box;text-align: center; display: inline-block;}
+.tab li:nth-child(1){color:rgb(215,215,198);border-bottom: px2rem(2) solid rgb(215,215,198);}
